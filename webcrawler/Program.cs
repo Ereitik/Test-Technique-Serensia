@@ -3,10 +3,10 @@ using webcrawler;
 
 
 var crawler = new WebCrawler();
-var urls = crawler.getEmailsInPageAndChidlPage(new WebBrowser(), "../../../index2.html", -1);
+var emails = crawler.getEmailsInPageAndChidlPage(new WebBrowser(), "../../../index2.html", 10);
 
-foreach (var url in urls)
+foreach (var email in emails)
 {
-    Console.WriteLine(url);
+    Console.WriteLine(email);
 }
 
